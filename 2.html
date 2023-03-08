@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vtoraya zadacha</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age, hight, weight, national, gendor) {
+                this.name = name;
+                this.age = age;
+                this.hight = hight;
+                this.weight= weight;
+                this.national = national;
+                this.gendor = gendor;
+            }
+            say(name, string) {
+                alert(string + " " + name.name)
+            }
+            heightManager(number) {
+                this.hight += number;
+            }
+            weightManager(number) {
+                this.weight += number;
+            }
+        }
+        let user = new Person("Vladislave", 17, 180, 60, "Russian", false);
+        let user2= new Person("Vivaldi",19,165,45,"Russian",true)
+        console.log(user)
+
+    </script>
+</body>
+</html>
